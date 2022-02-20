@@ -33,7 +33,7 @@ A website that plays the game Pig Dice with 1 to 2 players.
 - Code: Math.floor(Math.random() * 6) + 1 
 - Expected Output: any whole number, but must be between 1 and 6.
 ---
-- Test: 
+- Test: "Function will take the user's current score. If the roll = 1, it will change the user's score to 0. If it is anything but a 1, it will add it to the user's current score.
 - code: Array: 
 - Expected output:
 ---
