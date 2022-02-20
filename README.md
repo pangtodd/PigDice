@@ -29,9 +29,9 @@ A website that plays the game Pig Dice with 1 to 2 players.
 
 #### Describe: rollDice()
 
-- Test: 
-- Code: 
-- Expected Output:
+- Test: "Function will return a random whole number between 1 and 6"
+- Code: Math.floor(Math.random() * 6) + 1 
+- Expected Output: any whole number, but must be between 1 and 6.
 ---
 - Test: 
 - code: Array: 
