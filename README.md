@@ -27,7 +27,7 @@ A website that plays the game Pig Dice with 1 to 2 players.
 
 ## Tests:
 
-#### Describe: mrRoboto()
+#### Describe: rollDice()
 
 - Test: 
 - Code: 
