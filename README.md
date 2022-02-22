@@ -37,6 +37,17 @@ A website that plays the game Pig Dice with 1 to 2 players.
 - code: Array: 
 - Expected output:
 ---
+- Test: "Function will seperate a totalScore, a roll score (Which dice you threw), and your turn score.
+- code:   Player.totalScore= (Player.totalScore + roll) 
+      Player.score = (Player.score + roll)
+- expected output: total score:
+                    turn score:
+                    roll :
+---
+- Test: "Function will say 'You win!' if your totalScore is greater than or equal to 100"
+- code: 
+- expected output: 
+---
 - Test: 
 - code: 
 - expected output: 
