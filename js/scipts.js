@@ -38,10 +38,10 @@ function disableP2EnableP1(){
 }
 //WIN CHECK FUNCTION---------------------------------------------------------------
 function winCheck() {
-  if (Player1.totalScore + Player1.turnScore >= 30 ) {
+  if (Player1.totalScore + Player1.turnScore >= 100 ) {
     document.getElementById("game").style.display = "none";
     document.getElementById("p1Win").style.display = "block";
-  } else if (Player2.totalScore + Player2.turnScore >= 30) {
+  } else if (Player2.totalScore + Player2.turnScore >= 100) {
     document.getElementById("game").style.display = "none";
     document.getElementById("p2Win").style.display = "block";
   }
@@ -81,6 +81,11 @@ function changeImageP2() {
   } 
 }
 
+// function computerMove() {
+//   rollDiceP2()
+//   rollDiceP2()
+//   saveRollP2
+// }
 
 // ROLL DICE P1--------------------------------------------------------------
 function rollDiceP1() {
@@ -88,6 +93,7 @@ function rollDiceP1() {
       if (p1Roll === 1) { 
         Player1.turnScore = 0 
         disableP1EnableP2()
+        // computerMove()
       } else { 
         Player1.turnScore = Player1.turnScore + p1Roll
       }
