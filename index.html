@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <!-- <script src="js/jquery-3.6.0.js"></script> -->
+  <script src="js/jquery-3.6.0.js"></script>
   <title>Pig Dice</title>
 </head>
 <body>
@@ -23,15 +23,15 @@
   <p id="rollP1-el">This is the dice roll for each turn</p>
   <p id="turnScoreP1-el">This is your points per turn</p>
   <p id="totalScoreP1-el">This is your total score</p>
-  <button onclick="rollDiceP1()">Roll dice</button>
-  <button onclick="saveRollP1()">Save</button>
+  <button id="p1Roll" onclick="rollDiceP1()">Roll dice</button>
+  <button id="p1Save" onclick="saveRollP1()">Save</button>
   <script src="js/scipts.js"></script>
   <h2>Player 2</h2>
   <p id="rollP2-el">This is the dice roll for each turn</p>
   <p id="turnScoreP2-el">This is your points per turn</p>
   <p id="totalScoreP2-el">This is your total score</p>
-  <button onclick="rollDiceP2()">Roll dice</button>
-  <button onclick="saveRollP2()">Save</button>
+  <button id="p2Roll" onclick="rollDiceP2()">Roll dice</button>
+  <button id="p2Save" onclick="saveRollP2()">Save</button>
   <script src="js/scipts.js"></script>
 </body>
 </html>
