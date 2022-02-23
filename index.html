@@ -18,20 +18,29 @@
     </li>
     <li>Play passes from player to player until a winner is determined.</li>
   </ul>
-  <p>First Player to 100 wins!!!</p>
-  <h2>Player 1</h2>
-  <p id="rollP1-el">This is the dice roll for each turn</p>
-  <p id="turnScoreP1-el">This is your points per turn</p>
-  <p id="totalScoreP1-el">This is your total score</p>
-  <button id="p1Roll" onclick="rollDiceP1()">Roll dice</button>
-  <button id="p1Save" onclick="saveRollP1()">Save</button>
-  <script src="js/scipts.js"></script>
-  <h2>Player 2</h2>
-  <p id="rollP2-el">This is the dice roll for each turn</p>
-  <p id="turnScoreP2-el">This is your points per turn</p>
-  <p id="totalScoreP2-el">This is your total score</p>
-  <button id="p2Roll" onclick="rollDiceP2()">Roll dice</button>
-  <button id="p2Save" onclick="saveRollP2()">Save</button>
+  <div id="game">
+    <p>First Player to 100 wins!!!</p>
+    <h2>Player 1</h2>
+    <p id="rollP1-el">Current Dice Roll: </p>
+    <p id="turnScoreP1-el">Turn Score</p>
+    <p id="totalScoreP1-el">Total Score</p>
+    <button id="p1Roll" onclick="rollDiceP1()">Roll dice</button>
+    <button id="p1Save" onclick="saveRollP1()">Save</button>
+    <br>
+    <img id="p1Image" src="">
+    <br>
+    <h2>Player 2</h2>
+    <p id="rollP2-el">Current Dice Roll</p>
+    <p id="turnScoreP2-el">Turn Score: </p>
+    <p id="totalScoreP2-el">Total Score: </p>
+    <button id="p2Roll" onclick="rollDiceP2()">Roll dice</button>
+    <button id="p2Save" onclick="saveRollP2()">Save</button>
+    <br>
+    <img id="p2Image" src="">
+    <br>
+  </div>
+  <h1 id="p1Win">PLAYER 1 WINS</h1>
+  <h1 id="p2Win">PLAYER 2 WINS</h1>
   <script src="js/scipts.js"></script>
 </body>
 </html>
