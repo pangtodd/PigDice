@@ -17,11 +17,12 @@ function rollDiceP1() {
   roll = Math.floor(Math.random() * 6) + 1;
   //If statements for adding totalScore, Score, etc...
     if (roll === 1) { 
-      Player.score = 0    
+      Player.score = 0 
+      Player.turnScore = 0   
     } else { 
       Player.score = (Player.score + roll)
       Player.turnScore = (Player.score)
-      Player.totalScore = Player.turnScore
+      // Player.totalScore = Player.turnScore
     }
     //Winning If statements
     if (Player.totalScore >= 100) {
@@ -33,12 +34,12 @@ function rollDiceP1() {
   console.log("Total Score: " + Player.totalScore)
   rollEl.textContent = "current roll: " + roll
   turnScoreEl.textContent = "Score: " + Player.score
-  totalScoreEl.textContent = "Turn Score: " + Player.turnScore
+  // totalScoreEl.textContent = "Turn Score: " + Player.turnScore
 }
 
 function saveRollP1() {
-
-  
+  Player.totalScore = Player.totalScore + Player.turnScore
+  totalScoreEl.textContent = "Total Score: " + Player.totalScore
 }
 
 
